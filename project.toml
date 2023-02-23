@@ -1,12 +1,10 @@
 # rift project configuration file
 
-name = "bare-template"
+name = "storage"
 
-[contracts.bare_template]
-    name = "bare-template" # This is the generated target name -> [name].fc
-    contract = "BaseContract" # This is the contract class you have in the file
-    deploy = "deploy_base" # This is name of the deploy script
-    # All test scripts should be mentioned here
+[contracts.storage]
+    contract = "Storage"
+    deploy = "deploy_storage" # Will create later
     tests = [
-        "test_example"
+        "test_storage" # Will create later
     ]

@@ -1,30 +1,21 @@
-# Rift Bare Template
-This repository serves as a barebones project template with the Rift framework. It includes minimal examples of development, testing, and deployment.
+# Simple Storage Contract with Rift
+This repository serves as the implementation of simple storage contract with Rift framework which is discussed in [*Step-by-Step with Rift: Simple Storage Contract*](https://docs.skyring.io/rift/step-by-step-guides/simple-storage-contract) tutorial. It includes all steps of development, testing, and deployment.
 
-## Initializing the Project
-To start a new project, you have two options:
-
-1. Use this template directly through GitHub's interface by clicking the Use this template button and cloning your project.
-2. Use the rift command:
-```bash
-rift init my-project
-```
-This will initialize a new project in the `my-project` directory.
 
 ## Building the Project
-To build the project, run the following command (replace `TARGET` with the target contract or `all` to build the entire project):
+To build the project, run the following command:
 ```bash
-rift build TARGET
+rift build storage
 ```
 
 ## Testing
-To run tests on a `TARGET` contract, use the following command:
+To run tests, use the following command:
 ```bash
-rift test TARGET
+rift test storage
 ```
 
 ## Deployment
-To deploy your `TARGET` contract, use the following command:
+To deploy, use the following command:
 ```bash
-rift deploy TARGET
+rift deploy storage --network=test-net # or main-net
 ```
